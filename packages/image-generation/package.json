@@ -1,0 +1,24 @@
+{
+  "name": "opencode-image-generation",
+  "version": "0.2.0",
+  "description": "OpenCode V2 tool that generates images through OpenAI-compatible Images APIs",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.ts",
+  "files": ["index.ts", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.20"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.20",
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.3"
+  }
+}

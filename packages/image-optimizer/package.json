@@ -1,0 +1,25 @@
+{
+  "name": "opencode-image-optimizer",
+  "version": "0.2.0",
+  "description": "OpenCode V2 plugin that optimizes images returned by the read tool",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.ts",
+  "files": ["index.ts", "src", "README.md"],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "bun test",
+    "test:smoke": "bun test/smoke.ts"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.20"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.20",
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.3"
+  }
+}
